@@ -83,4 +83,99 @@ mumble = (string) => {
     return result.join('')
 }
 
-console.log(mumble('abcde'))
+// console.log(mumble('abcde'))
+
+let orang = {
+    nama: 'saitama',
+    pekerjaan: 'superhero',
+    contact: {
+        nomorTelfon: [0812345678, 087654321],
+        address: {
+            jalan: 'Jl. Setiabudi',
+            kota: 'JKT'
+        }
+    },
+    orangTua: [
+        {
+            nama: 'Ibunya Saitama',
+            pekerjaan: 'Urus Saitama'
+        },
+        {
+            nama: 'Bapaknya Saitama',
+            pekerjaan: 'Urus Ibunya Saitama'
+        }
+    ],
+    pukul: () => {
+        return 'aduh sakit'
+    }
+}
+// tmangowal@gmail.com
+// Subject: Progress 1 FP JC10 JKT
+let string = 'Hello Dunia!'
+orang.nama = 'doraemon'
+console.log(orang)
+
+
+function coba () {
+    function e () {
+        return {
+            saitama: 'orang',
+            dunia: [
+                0,
+                1,
+                2,
+                {
+                    testing: (param) => {
+                        return {
+                            [param]: {
+                                world: () => {
+                                    return 'iseng hehe'
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+    return e
+}
+
+function bikinObject (a,b,c) {
+    return {
+        [a]: 'Ini param 1',
+        [b]: 'Ini param 2',
+        [c]: 'Ini param 3'
+    }
+}
+
+// console.log(bikinObject('sakit', 'hati', 'hehe'))
+// console.log(coba()().dunia[3].testing('halo').halo.world())
+// console.log(coba()())
+// console.log('HelloDunia'.replace)
+// console.log(orang.pukul)
+
+sumFn = (arr) => {
+    let positives = 0
+    let negatives = 0
+
+    // for(let i = 0; i < arr.length; i++){
+    //     if(arr[i] > 0){
+    //         positives += arr[i]
+    //     }else if(arr[i] < 0){
+    //         negatives += arr[i]
+    //     }
+    // }
+
+    arr.forEach((val) => {
+            if(val > 0){
+                positives += val
+            }else if(val < 0){
+                negatives += val
+            }
+    })
+
+    return [positives, negatives]
+}
+
+console.log(sumFn([1,2,3,-3,-2,-1]))
